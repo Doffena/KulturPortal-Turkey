@@ -71,5 +71,6 @@ kultur-portal-monuments/
 - Use separate train/validation splits before training for real experiments.
 
 
-## Bu proje **Burak AVCI** tarafından geliştirilmiştir.  
+## Geliştirici
+Bu proje **Burak AVCI** tarafından geliştirilmiştir.  
  burakavci0206@gmail.com
