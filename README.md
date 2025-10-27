@@ -2,19 +2,19 @@
 
 This repository collects **public monument data** from Turkey’s official **Cultural Portal**, builds a **structured dataset**, and fine‑tunes a Turkish NLP model for QA/retrieval/classification with a target of **≥80% validation accuracy** on the chosen task. Scraping follows `robots.txt` and ToS. A FastAPI endpoint provides inference.
 
-> ⚠️ Only public pages are scraped. Respect robots.txt and terms. Keep **source URLs** in the dataset and credit the source.
+>  Only public pages are scraped. Respect robots.txt and terms. Keep **source URLs** in the dataset and credit the source.
 
 ---
 
 ## 🇹🇷 Türkçe Açıklama
 
-### 🎯 Amaç
+### Amaç
 - Kültür Portalı’ndan **kamusal anıt sayfalarını** gezip **yapılandırılmış veri kümesi** oluşturmak
 - Bu veriyle bir **Türkçe NLP modelini fine‑tune** etmek (sınıflandırma, QA veya retrieval)
 - **≥%80 doğruluk** hedefi (göreve uygun metrik: Accuracy / F1 / EM-F1)
 - **FastAPI** ile sorgulanabilir bir uç nokta
 
-### 🚦 Hızlı Başlangıç
+### Hızlı Başlangıç
 ```bash
 python -m venv .venv
 # Windows: .venv\Scripts\activate
@@ -42,7 +42,7 @@ python -m src.modeling.evaluate --task classify
 uvicorn src.app.api:app --host 0.0.0.0 --port 8000
 ```
 
-### 📁 Dizin Yapısı
+### Dizin Yapısı
 ```
 kultur-portal-monuments/
 ├─ configs/scraping.yaml
