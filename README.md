@@ -69,3 +69,6 @@ kultur-portal-monuments/
 - Update CSS selectors in `configs/scraping.yaml` to match the portal’s DOM if needed.
 - Keep crawl rate polite (1–2s). Increase if you get throttled.
 - Use separate train/validation splits before training for real experiments.
+
+Bu proje **Burak AVCI** tarafından geliştirilmiştir.  
+ burakavci0206@gmail.com
