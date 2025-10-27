@@ -1,0 +1,20 @@
+# Scraping configuration
+base_url: "https://kulturportali.gov.tr"
+user_agent: "Mozilla/5.0 (compatible; KPBot/1.0; +https://github.com/your-username)"
+rate_seconds_min: 1.0
+rate_seconds_max: 2.0
+timeout_seconds: 20
+max_pages: 200
+paths:
+  listing: "/turkiye-de-gezilecek-yerler/anitlar?page={page}"  # verify via DevTools
+selectors:
+  listing_card: "a.card-link"
+  listing_title: ".card-title"
+  detail_title: "h1"
+  detail_content: ".detail .content, .page-content, article"
+  detail_city: '[itemprop="addressLocality"]'
+  detail_district: '[itemprop="addressRegion"]'
+storage:
+  listing_jsonl: "data/raw/listing.jsonl"
+  detail_jsonl:  "data/raw/detail.jsonl"
+  processed_jsonl: "data/processed/monuments.jsonl"
