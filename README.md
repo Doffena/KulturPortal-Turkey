@@ -70,5 +70,6 @@ kultur-portal-monuments/
 - Keep crawl rate polite (1–2s). Increase if you get throttled.
 - Use separate train/validation splits before training for real experiments.
 
-Bu proje **Burak AVCI** tarafından geliştirilmiştir.  
+
+## Bu proje **Burak AVCI** tarafından geliştirilmiştir.  
  burakavci0206@gmail.com
